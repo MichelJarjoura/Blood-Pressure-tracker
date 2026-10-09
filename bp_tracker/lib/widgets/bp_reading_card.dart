@@ -97,7 +97,7 @@ class BpReadingCard extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8, vertical: 2),
                         decoration: BoxDecoration(
-                          color: color.withOpacity(0.15),
+                          color: color.withValues(alpha: 0.15),
                           borderRadius: BorderRadius.circular(6),
                         ),
                         child: Text(
@@ -115,7 +115,7 @@ class BpReadingCard extends StatelessWidget {
                           children: [
                             Icon(Icons.favorite_rounded,
                                 size: 11,
-                                color: AppTheme.primary.withOpacity(0.7)),
+                                color: AppTheme.primary.withValues(alpha: 0.7)),
                             const SizedBox(width: 3),
                             Text(
                               '${reading.pulse} bpm',
@@ -181,12 +181,12 @@ class BpHeroGauge extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            color.withOpacity(0.15),
-            color.withOpacity(0.05),
+            color.withValues(alpha: 0.15),
+            color.withValues(alpha: 0.05),
           ],
         ),
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: color.withOpacity(0.3)),
+        border: Border.all(color: color.withValues(alpha: 0.3)),
       ),
       child: Column(
         children: [
@@ -242,7 +242,7 @@ class BpHeroGauge extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.15),
+              color: color.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(30),
             ),
             child: Row(
@@ -267,7 +267,7 @@ class BpHeroGauge extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.favorite_rounded,
-                    size: 14, color: AppTheme.primary.withOpacity(0.8)),
+                    size: 14, color: AppTheme.primary.withValues(alpha: 0.8)),
                 const SizedBox(width: 6),
                 Text(
                   '${reading.pulse} bpm',
