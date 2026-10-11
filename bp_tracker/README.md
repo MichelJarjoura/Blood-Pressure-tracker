@@ -27,6 +27,7 @@ A clean, dark-themed blood pressure tracking app built with Flutter + Riverpod +
 | ![History](screenshots/bpTracker_historyScreen.jpg) | ![Home](screenshots/bpTracker_homeScreen.jpg) | ![Trends](screenshots/bpTracker_trendsScreen.jpg) |
 
 
+
 ## 🗂 Project Structure
 
 ```
